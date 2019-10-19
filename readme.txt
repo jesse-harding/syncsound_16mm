@@ -2,17 +2,19 @@
 
 step 1: open Processing sketch syncsound_16mm.pde
 
-step 2: go to the userInputs tab and verify settings such as loop, syncSound, printer dpi, output filename, and filename of audio to be used.
+step 2: make sure you have the minim and sound libraries downloaded and added to your Processing folder
+
+step 3: go to the userInputs tab and verify settings such as loop, syncSound, printer dpi, output filename, and filename of audio to be used.
 
 	[PRECAUTION: AUDIO USED SHOULD BE 15.8333333 SECONDS LONG AND MUST HAVE A SAMPLE RATE OF 44100HZ]
 
-step 3: place your 374 frames (at 24fps) of moving image (ideally formatted to 242X177) in the folder named "frames" inside of the data folder
+step 4: place your 374 frames (at 24fps) of moving image (ideally formatted to 242X177) in the folder named "frames" inside of the data folder
 
-step 4: run Processing sketch
+step 5: run Processing sketch (you may need to expand the amount of memory available to Processing via the preferences menu, depending on length of composition)
 
-step 5: open the outputted tiff file and adjust dpi (WITHOUT RESAMPLING) to your printer's resolution (dpi)
+step 6: open the outputted tiff file and adjust dpi (WITHOUT RESAMPLING) to your printer's resolution (dpi)
 
-step 6: clean transparency sheet of dust and print at highest quality
+step 7: clean transparency sheet of dust and print at highest quality
 
 
 

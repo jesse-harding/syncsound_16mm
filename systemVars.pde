@@ -33,29 +33,29 @@ float maxFrame = 0; // initializing the variable to find the most extreme part o
 boolean tooLong = false; ////REMOVE?????
 
 //IMAGE SECTION
+
+//soon-to-be-populated pixel measurements
 float frameY;
 float frameX;
 float pitch;
 float frameLine;
 int offset = 2;
 
-float inchFrameY = 0.40393701; //these are purposefully reversed because the filmstock is rotated on the medium (Y is horizontal and X is vertical IRL)
+//inch measurements
+float inchFrameY = 0.40393701; //frameX & frameY are purposefully reversed because the filmstock is rotated on the medium (Y is horizontal and X is vertical IRL)
 float inchFrameX = 0.2948819;
 float inchPitch = .3;
 
 int soundAdvance = 26; //audio is 26 frames ahead of image
-float xPerf = .072007874; //inches
+float xPerf = .072007874; //inches for sprocket holes
 float yPerf = .05; //inches
 
-
-PGraphics pg[] = new PGraphics[1]; //declaring the PGraphics object for output  //this needs to change ???
-int gangUp[] = new int[1];
-
-
+PGraphics pg[] = new PGraphics[1]; //declaring the PGraphics object array for outputting individual pages
+int gangUp[] = new int[1]; //declaring array to hold number of rows per sheet.
 
 int wrap = 0; //counter for how many times we have to start a new continuous print of filmstock (limited by transparency size)
 int prevPercent = 0; //variable to limit progress report to not repeat information
-boolean saved = false;
-String[] filenames;
-boolean printProgress = true;
+boolean saved = false; //used draw images to to screen and cycle through PGraphics exported pages
+String[] filenames; //filenames for images
+boolean printProgress = true; //for console output of audio filtering progress
 PFont font;
