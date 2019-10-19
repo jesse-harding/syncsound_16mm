@@ -11,7 +11,7 @@ boolean normalize = true; // maximize audio amplitude
 float outputDPI = 600; //dpi of printer
 
 String projectName = "lobby"; //name shared by image folder, imported audio file, and exported image
-int numFrames = 7200 ; //add alert for too many images
+int numFrames = 275 ; //add alert for too many images
 
 String fileType = ".tiff"; //".tiff" or ".png" are reccomended for quality
 
