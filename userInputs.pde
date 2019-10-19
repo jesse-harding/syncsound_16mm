@@ -1,9 +1,9 @@
 //347 frames (15.58 sec) if filling the page (thats 15 seconds and 14 frames)
 //242X177 image frame size @ 600 dpi
 
-boolean recordFilter = false;  //apply low pass filter to input audio file?
+boolean recordFilter = true;  //apply low pass filter to input audio file?
 boolean syncSound = true;
-boolean loop = false ; //fix mistake at end for !loop ???
+boolean loop = true ;
 
 float bleed = .1; //set up a bleed of .1 inches total (.05 per side)
 boolean normalize = true; // maximize audio amplitude
